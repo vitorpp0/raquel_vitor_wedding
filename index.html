@@ -1,6 +1,46 @@
 <!DOCTYPE html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+        canvas{
+            padding: auto;
+            margin: auto;
+        }
+
+        body{
+            background-color: #E3F2C1;
+        }
+        #credits{
+            position:relative;
+            top:95vh;
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            width: 340px;
+            background-color: rgba(72, 56, 56, 0.5);
+            border: 1px solid #617A55;
+            border-radius: 1vw;
+        }
+        p{
+            font-family: 'Quicksand', sans-serif;
+            margin:0;
+            padding:0;
+            width: 320px;
+            color: #DEDEDE;
+        }
+        a{
+            font-family: 'Quicksand', sans-serif;
+            color: #DEDEDE;
+        }
+    </style>
+</head>
 <html>
     <body>
         <script type="module" src="./dist/bundle_render.js"></script>
+        <div id="credits">
+            <p> Created by:</p>
+            <p>Vitor Pinheiro Pinto & Raquel Kort-Kamp</p>
+            <p> Using blender: <a href="https://www.blender.org/">Blender</a> & <a href="https://threejs.org/">Three.js</a></p>
+        </div>
     </body>
 </html>
